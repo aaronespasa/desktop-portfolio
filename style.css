@@ -327,7 +327,7 @@ nav {
 /* Tablet & Ipad media query */
 @media (max-width: 768px) {
     /* HOMEPAGE */
-    .hero img {
+    .hero a > img {
         height: 400px;
     }
     
@@ -340,8 +340,16 @@ nav {
 /* Mobile media query */
 @media (max-width: 480px) {
     /* HOMEPAGE */
-    .hero img {
+    .page {
+        grid-template-rows: 1.4fr 1fr;
+    }
+
+    .hero a > img {
         height: 300px;
+    }
+
+    .details {
+        align-self: top;
     }
 
     .details h1 {
@@ -350,6 +358,7 @@ nav {
 
     .details h2 {
         font-size: 24px;
+        padding: 20px 0 10px 0;
     }
 
     /* Page indicators style */
